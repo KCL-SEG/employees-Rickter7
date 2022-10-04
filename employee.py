@@ -30,7 +30,7 @@ class SalaryEmployee(Employee):
         return self.salary
 
     def addSalary(self):
-        super.addToPay(self.salary)
+        self.addToPay(self.salary)
 
 class ContractEmployee(Employee):
     salary = 0
