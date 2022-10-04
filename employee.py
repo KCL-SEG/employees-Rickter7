@@ -35,7 +35,7 @@ class SalaryEmployee(Employee):
 class ContractEmployee(Employee):
     salary = 0
     def __init__(self, name, rate, hours):
-        super().__init__(self,name)
+        super().__init__(name)
         self.rate = rate
         self.hours = hours
 
