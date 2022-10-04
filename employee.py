@@ -1,9 +1,6 @@
 """Employee pay calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
-from typing_extensions import Self
-
-
 class Employee:
     totalPay = 0
     string = ""
@@ -33,7 +30,7 @@ class SalaryEmployee(Employee):
         return self.salary
 
     def addSalary(self):
-        Self.addToPay(self.salary)
+        self.addToPay(self.salary)
 
 class ContractEmployee(Employee):
     salary = 0
