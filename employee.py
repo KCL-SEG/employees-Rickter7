@@ -22,7 +22,7 @@ class Employee:
 
 class SalaryEmployee(Employee):
     def __init__(self, name, salary):
-        super().__init__(self,name)
+        super().__init__(self,name,salary)
         self.salary = salary
         self.addSalary()
 
