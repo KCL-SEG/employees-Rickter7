@@ -1,6 +1,9 @@
 """Employee pay calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
+from typing_extensions import Self
+
+
 class Employee:
     totalPay = 0
     string = ""
@@ -30,7 +33,7 @@ class SalaryEmployee(Employee):
         return self.salary
 
     def addSalary(self):
-        Employee.addToPay(self.salary)
+        Self.addToPay(self.salary)
 
 class ContractEmployee(Employee):
     salary = 0
@@ -58,7 +61,7 @@ renee = SalaryEmployee('Renee', 3000)
 jan = ContractEmployee('Jan', 25, 150)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
-robbie = SalaryEmployee('Robbie', 200)
+robbie = SalaryEmployee('Robbie', 2000)
 
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = ContractEmployee('Ariel', 30, 120)
