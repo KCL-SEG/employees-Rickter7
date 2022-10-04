@@ -2,15 +2,38 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
+    totalPay = 0
+
     def __init__(self, name):
         self.name = name
 
     def get_pay(self):
-        pass
+        return Employee.totalPay
+
+    def addToPay(amount):
+        Employee.totalPay += amount
 
     def __str__(self):
         return self.name
 
+class SalaryEmployee(Employee):
+    def __init__(self, name, salary):
+        super().__init__(self,name)
+        self.salary = salary
+        self.addSalary()
+
+    def addSalary(self):
+        Employee.addToPay(self.salary)
+
+class ContractEmployee(Employee):
+    salary = 0
+    def __init__(self, name, rate, hours):
+        super().__init__(self,name)
+        self.rate = rate
+        self.hours = hours
+
+    def calculateSalary(self):
+        salary = self.rate * self.hours
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billie = Employee('Billie')
