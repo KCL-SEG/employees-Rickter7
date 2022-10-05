@@ -3,7 +3,6 @@
 
 class Employee:
     totalPay = 0
-    string = ""
 
     def __init__(self, name):
         self.name = name
@@ -13,10 +12,6 @@ class Employee:
 
     def addToPay(self,amount):
         self.totalPay += amount
-
-
-    def editString(string):
-        Employee.string = string
 
     def getSalary(self):
         return self.salary
