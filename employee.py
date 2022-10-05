@@ -12,7 +12,7 @@ class Employee:
         return Employee.totalPay
 
     def addToPay(amount):
-        Employee.totalPay += amount
+        totalPay += amount
 
     def __str__(self):
         return self.name
@@ -30,7 +30,7 @@ class SalaryEmployee(Employee):
         return self.salary
 
     def addSalary(self):
-        self.addToPay(self.salary)
+        self.addToPay(salary)
 
 class ContractEmployee(Employee):
     salary = 0
