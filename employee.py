@@ -37,7 +37,7 @@ class ContractEmployee(Employee):
         self.addToPay(self.salary)
 
     def calculateSalary(self):
-        self.salary = self.rate * self.hours
+        self.salary = self.rate*self.hours
 
     def __str__(self):
         return (self.name + " works on a contract of " + str(self.hours) + " hours at "+ str(self.rate) + "/hour. Their total pay is " + str(self.get_pay()) + ".")
